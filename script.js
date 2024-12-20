@@ -33,7 +33,7 @@ function formatTimeWithLeadingZeros(str) {
 function onInit() {
   modeTextHeader.innerText = "Work";
   currentMinutes.innerText = formatTimeWithLeadingZeros(WORK_MINUTES);
-  currentSeconds.innerText = "05";
+  currentSeconds.innerText = "00";
 }
 
 onInit();
