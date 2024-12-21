@@ -31,9 +31,12 @@ function formatTimeWithLeadingZeros(str) {
  * Initializes the timer with default values for a work session.
  */
 function onInit() {
+  const modeTextBtn = switchModeBtn.querySelector(".mode-text");
+
   modeTextHeader.innerText = "Work";
   currentMinutes.innerText = formatTimeWithLeadingZeros(WORK_MINUTES);
   currentSeconds.innerText = "00";
+  modeTextBtn.innerText = "Break";
 }
 
 onInit();
