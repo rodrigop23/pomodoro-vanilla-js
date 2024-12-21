@@ -97,10 +97,11 @@ function handleSwitchModeClick(autoStart = false) {
   const modeTextBtn = switchModeBtn.querySelector(".mode-text");
 
   const modeText = isWorkMode() ? "Break" : "Work";
+  const modeBtn = isWorkMode() ? "Work" : "Break";
   const modeMinutes = isWorkMode() ? BREAK_MINUTES : WORK_MINUTES;
 
   modeTextHeader.innerText = modeText;
-  modeTextBtn.innerText = modeText;
+  modeTextBtn.innerText = modeBtn;
 
   currentMinutes.innerText = formatTimeWithLeadingZeros(modeMinutes);
   currentSeconds.innerText = "00";
